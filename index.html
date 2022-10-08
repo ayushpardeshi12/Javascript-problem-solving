@@ -8,7 +8,7 @@
 </head>
 <h1>
 150 very easy problems done from edabit TILL ( Char to ASCII)</h1>
-<h1>123 easy problems done from edabit ( Integer Digits Count )</h1>
+<h1>126 easy problems done from edabit ( Fix the Error Value vs Reference )</h1>
 <h1>93 problems done till (98 from w3resource 150 basic problems)
 <h1>
 19 problems done from w3resources (till 22 from functions);  
@@ -16,14 +16,19 @@
 </h1>
 <p id="demo"></p>
     <script>
-       function repDigit(num){
-            let num1=num.toString(10);
-                if(num1[0]===num1[1]){
-                    return "Rep Digit";
+        function ErroVal(arr1,arr2){
+            let num=[];
+               for(let i=0;i<arr1.length;i++){
+                for(let j=0;j<arr2.length;j++){
+                    if(arr1[i]===arr2[j]){
+                        num.push(i,j);
+                        return "Same values"
+                    }
                 }
-           return false;
-       }
-       console.log(repDigit(62));
+               }
+               return false;
+        }
+        console.log(ErroVal([1,2],[1,2]));
 	</script>
 
 </body>
