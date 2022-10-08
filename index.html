@@ -8,27 +8,22 @@
 </head>
 <h1>
 150 very easy problems done from edabit TILL ( Char to ASCII)</h1>
-<h1>113 easy problems done from edabit ( RegEx Exercise : An Empty String )</h1>
+<h1>123 easy problems done from edabit ( Integer Digits Count )</h1>
 <h1>93 problems done till (98 from w3resource 150 basic problems)
 <h1>
-10 problems done from w3resources (till 11)  
+19 problems done from w3resources (till 22 from functions);  
+
 </h1>
 <p id="demo"></p>
     <script>
-      function amountTocoins(amount,coins){
-        if(amount==0){
-            return [];
-        }else{
-            if(amount>=coins[0]){
-                let left=(amount-coins[0]);
-                return [coins[0]].concat(amountTocoins(left,coins));
-            }else{
-                coins.shift();
-                return amountTocoins(amount,coins);
-            }
-        }
-      }
-      console.log(amountTocoins(50,[20,10,10,5,2,1]));
+       function repDigit(num){
+            let num1=num.toString(10);
+                if(num1[0]===num1[1]){
+                    return "Rep Digit";
+                }
+           return false;
+       }
+       console.log(repDigit(62));
 	</script>
 
 </body>
